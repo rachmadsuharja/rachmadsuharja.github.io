@@ -1,0 +1,43 @@
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #081b29;
+}
+
+.header {
+    width: 100%;
+}
+
+.navigation-bar  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    color: white;
+}
+
+.navigation-bar .nav-item .active {
+    color: royalblue;
+    font-weight: 650;
+}
+
+.content {
+    width: 100%;
+    height: 70vh;
+}
+
+.pict-container {
+    background-image: url('assets/images/blob.svg');
+    background-repeat: no-repeat;
+}
