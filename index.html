@@ -20,27 +20,43 @@
 
 <body>
 
-    <div class="container-fluid hero-container">
+    <div class="container-fluid">
         <div class="header d-flex justify-content-end">
             <ul class="navbar-nav navigation-bar">
                 <li class="nav-item">
-                    <a class="nav-link active" href="">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Me</a>
+                    <a class="nav-link" href="#aboutme">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"></a>
                 </li>
             </ul>
         </div>
-        <div class="row justify-content-evenly content">
-            <div class="col-sm-8 col-md-6 col-lg-6 bg-info">.</div>
-            <div class="col-sm-8 col-md-4 col-lg-4 pict-container">
-                <img src="assets/images/halfbody.webp" class="w-75" data-aos="fade-up-left" data-aos-duration="1500" alt="">
+        <div class="row" id="content">
+            <div class="col-sm-8 col-md-6 col-lg-6" id="home">
+                <h4>Rachmad Suharja</h4>
+                <p>UI/UX Designer</p>
+            </div>
+            <div class="col-sm-8 col-md-4 col-lg-4 d-flex flex-column align-items-center">
+                <div class="w-100" id="image-content">
+                    <img src="assets/images/halfbody.webp" class="w-75" data-aos="fade-in" data-aos-duration="1000" alt="">
+                </div>
+                <div class="w-50 mt-4" id="sosmed">
+                    <a href="https://www.instagram.com/harjakrepp_/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://discord.gg/7g9Mw4stSD">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    <a href="https://github.com/rachmadsuharja">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="footer">.</div>
