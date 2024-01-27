@@ -17,6 +17,34 @@
     font-family: 'Montserrat';
 }
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+        radial-gradient(farthest-side,var(--main-color) 94%,#0000) top/8px 8px no-repeat,
+        conic-gradient(#0000 30%, var(--main-color));
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+    100%{transform: rotate(1turn)}
+}
+
 .container-fluid {
     display: flex;
     flex-direction: column;
@@ -88,3 +116,77 @@
     font-size: 1.5rem;
     color: white;
 }
+
+
+
+/* LOADER ANIMATION */
+/* LOADER 1
+.loader {
+    --d:22px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    color: #25b09b;
+    box-shadow: 
+        calc(1*var(--d))      calc(0*var(--d))     0 0,
+        calc(0.707*var(--d))  calc(0.707*var(--d)) 0 1px,
+        calc(0*var(--d))      calc(1*var(--d))     0 2px,
+        calc(-0.707*var(--d)) calc(0.707*var(--d)) 0 3px,
+        calc(-1*var(--d))     calc(0*var(--d))     0 4px,
+        calc(-0.707*var(--d)) calc(-0.707*var(--d))0 5px,
+        calc(0*var(--d))      calc(-1*var(--d))    0 6px;
+    animation: l27 1s infinite steps(8);
+}
+@keyframes l27 {
+100% {transform: rotate(1turn)}
+}
+
+LOADER 2 ARCADE
+
+.loader {
+    width: fit-content;
+    font-size: 17px;
+    font-family: monospace;
+    line-height: 1.4;
+    font-weight: bold;
+    background: 
+        linear-gradient(#000 0 0) left ,
+        linear-gradient(#000 0 0) right;
+    background-repeat: no-repeat; 
+    border-right: 5px solid #0000;
+    border-left: 5px solid #0000;
+    background-origin: border-box;
+    position: relative;
+    animation: l9-0 2s infinite;
+}
+.loader::before {
+    content:"Loading";
+}
+.loader::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 22px;
+    height: 60px;
+    background: 
+        linear-gradient(90deg,#000 4px,#0000 0 calc(100% - 4px),#000 0) bottom            /22px 20px,
+        linear-gradient(90deg,red  4px,#0000 0 calc(100% - 4px),red  0) bottom 10px left 0/22px 6px,
+        linear-gradient(#000 0 0) bottom 3px left 0  /22px 8px,
+        linear-gradient(#000 0 0) bottom 0   left 50%/8px  16px;
+    background-repeat: no-repeat;
+    animation: l9-1 2s infinite;
+}
+@keyframes l9-0{
+    0%,25%    {background-size: 50% 100%}
+    25.1%,75% {background-size: 0 0,50% 100%}
+    75.1%,100%{background-size: 0 0,0 0}
+}
+@keyframes l9-1{
+    25%   { background-position:bottom, bottom 54px left 0,bottom 3px left 0,bottom 0 left 50%;left:0}
+    25.1% { background-position:bottom, bottom 10px left 0,bottom 3px left 0,bottom 0 left 50%;left:0}
+    50%   { background-position:bottom, bottom 10px left 0,bottom 3px left 0,bottom 0 left 50%;left:calc(100% - 22px)}
+    75%   { background-position:bottom, bottom 54px left 0,bottom 3px left 0,bottom 0 left 50%;left:calc(100% - 22px)}
+    75.1% { background-position:bottom, bottom 10px left 0,bottom 3px left 0,bottom 0 left 50%;left:calc(100% - 22px)}
+  }
+*/
