@@ -1,82 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rachmad Suharja | Portfolio</title>
-    <meta name="description" content="Explore my portfolio to discover my creative work and skills as an Application Developer. I create visually appealing apps with a seamless user experience.">
-    <meta name="keywords" content="portfolio, cv, resume, portfolio website">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://rachmadsuharja.is-a.dev">
-    <!-- Include Bootstrap v.5.3.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Include Font Awesome v.6.5.1 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <meta
+      name="description"
+      content="Explore my portfolio to discover my creative work and skills as an Application Developer. I create visually appealing apps with a seamless user experience."
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-</head>
+    <meta name="keywords" content="portfolio, cv, resume, portfolio website" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rachmadsuharja.is-a.dev" />
+    <!-- Include Bootstrap v.5.3.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Include Font Awesome v.6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Include Feather Icons  -->
+    <link
+      rel="stylesheet"
+      href="assets/icons/feathericon/css/feathericon.min.css"
+    />
+    <!-- Include Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
 
-<body>
+  <body>
     <div id="preloader">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
 
     <div class="container-fluid">
-        <div class="header d-flex justify-content-end">
-            <ul class="navbar-nav navigation-bar">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#aboutme">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"></a>
-                </li>
-            </ul>
+      <div class="nav-container">
+        <ul class="navbar-nav navigation-bar">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme"
+              ><i class="fe fe-user"></i> <span>About Me</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#home"
+              ><i class="fe fe-home"></i> <span>Home</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects"
+              ><i class="fe fe-layer"></i> <span>Projects</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="row" id="home">
+        <div class="col-sm-8 col-md-6 home">
+          <h4>Rachmad Suharja</h4>
+          <p>Designer | Fullstack Developer</p>
         </div>
-        <div class="row" id="content">
-            <div class="col-sm-8 col-md-6 col-lg-6" id="home">
-                <h4>Rachmad Suharja</h4>
-                <p>UI/UX Designer</p>
-            </div>
-            <div class="col-sm-8 col-md-4 col-lg-4 d-flex flex-column align-items-center">
-                <div class="w-100" id="image-content">
-                    <img src="assets/images/halfbody.webp" class="w-75" data-aos="fade-in" data-aos-duration="1000" alt="">
-                </div>
-                <div class="w-50 mt-4" id="sosmed">
-                    <a href="https://www.instagram.com/harjakrepp_/">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://discord.gg/7g9Mw4stSD">
-                        <i class="fa-brands fa-discord"></i>
-                    </a>
-                    <a href="https://github.com/rachmadsuharja">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
-            </div>
+        <div
+          class="col-sm-8 col-md-4 col-lg-4 d-flex flex-column align-items-center"
+        >
+          <div class="w-100" id="image-content">
+            <img
+              src="assets/images/halfbody.webp"
+              class="w-75"
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              alt=""
+            />
+          </div>
+          <div class="w-50 mt-4" id="sosmed">
+            <a
+              href="https://www.instagram.com/harjakrepp_/"
+              data-bs-toggle="tooltip"
+              data-bs-title="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://discord.gg/7ZgNTvmF"
+              data-bs-toggle="tooltip"
+              data-bs-title="Discord Server"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a
+              href="https://github.com/rachmadsuharja"
+              data-bs-toggle="tooltip"
+              data-bs-title="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
-        <div class="footer">.</div>
+      </div>
+      <div class="row" id="aboutme"></div>
+      <div class="row" id="projects"></div>
     </div>
 
     <!-- Include Bootstrap v.5.3.2 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <!-- Include Feather Icons v.4.29.1 -->
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.29.1/dist/feather.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/js/jquery-3.7.1.js"></script>
-    <script src="index.js"></script>
+    <script src="assets/js/index.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>
