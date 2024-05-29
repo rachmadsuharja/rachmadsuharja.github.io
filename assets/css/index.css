@@ -5,7 +5,7 @@
 
 :root {
   --bg-color: #081b29;
-  --gradient-bg-color: rgba(0, 0, 0, 0.3);
+  --gradient-bg-color: linear-gradient(#081b29, #040011);
   --second-bg-color: #112e42;
   --text-color: #ededed;
   --main-color: #00abf0;
@@ -72,7 +72,7 @@ p {
 }
 
 .container-fluid {
-  background-image: linear-gradient(#081b29, #040011);
+  background-image: var(--gradient-bg-color);
 }
 
 .nav-container {
@@ -85,15 +85,14 @@ p {
 }
 
 .navigation-bar {
-  background-color: var(--gradient-bg-color);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 1rem 3rem;
   gap: 2rem;
   font-size: 1rem;
-  color: white;
+  color: var(--text-color);
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -162,13 +161,14 @@ p {
   height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575.98px) {
   /* Phone Breakpoint */
   .nav-container {
     bottom: 0;
   }
   .nav-container .navigation-bar {
     gap: 3rem;
+    padding: 1rem 3rem;
   }
   .navigation-bar .nav-item .nav-link span {
     display: none;
@@ -185,8 +185,36 @@ p {
   }
 }
 
-@media screen and (min-width: 769px) {
-  /* Tablet BreakPoint */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .nav-container {
+    top: 1rem;
+    bottom: initial;
+  }
+  .navigation-bar {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  #home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  #home h4 {
+    font-size: 3rem;
+  }
+  #home p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    top: 1rem;
+    bottom: initial;
+  }
+  .navigation-bar {
+    flex-direction: row;
+    padding: 1rem;
+  }
   #home h4 {
     font-size: 3.5rem;
   }
@@ -203,16 +231,3 @@ p {
     flex-direction: row;
   }
 }
-
-/* 
-@media screen and (min-width: 1200px) {
-  .nav-container {
-    right: 1rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .nav-container {
-    right: 1rem;
-  }
-} */
