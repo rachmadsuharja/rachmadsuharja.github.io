@@ -148,6 +148,10 @@ p {
     color: var(--text-color);
 }
 
+#aboutme header {
+    padding: 0;
+}
+
 #aboutme p {
     font-family: "Source Code Pro";
 }
@@ -157,6 +161,7 @@ p {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    padding: 0;
 }
 
 .content-wrapper #img-wrapper {
@@ -280,7 +285,6 @@ p {
         flex-direction: column-reverse;
     }
     #aboutme .content-wrapper p {
-        width: 88vw;
         font-size: 0.6rem;
         line-height: 1.3rem;
     }
@@ -315,7 +319,6 @@ p {
         flex-direction: column-reverse;
     }
     #aboutme .content-wrapper p {
-        width: 85vw;
         font-size: 0.8rem;
         line-height: 1.4rem;
     }

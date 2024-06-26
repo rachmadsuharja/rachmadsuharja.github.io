@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   let aboutMe = `Hi there! I'm Harja,
   Born and raised in Indonesia on June 4th, 2005.
   Indonesian Tech Enthusiast fresh out of SMKN 1 Lumajang with a Software Engineering degree (super proud!). 
-  I'm obsessed with learning new things, especially the mysteries of the universe, knowledge of the world of geography. or dives deep into the ever-evolving world of technology. Also I enjoy reading books and listening to music.
-  When I'm not hitting the books or jamming to tunes, you might find me working out or tackling a Rubik's Cube.
+  I'm obsessed with learning new things, especially the mysteries of the universe, knowledge of the world of geography. or dives deep into the ever-evolving world of technology. Also I love photography and listening to music.
+  When I'm not capturing beautiful views or jamming to tunes, you might find me working out or tackling a Rubik's Cube.
   So, that's me in a nutshell. What about you? Let's connect and see where our journeys take us!
   `;
   document.getElementById("aboutme-content").innerText = aboutMe;
