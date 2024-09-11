@@ -8,6 +8,7 @@
   --gradient-bg-color: linear-gradient(#081b29, #040011);
   --second-bg-color: #112e42;
   --text-color: #ededed;
+  --gray-text-color: #888888;
   --main-color: #0f62fe;
   --main-color1: #00abf0;
 }
@@ -218,34 +219,17 @@ p {
 }
 
 .show-more_section {
-  display: block;
   opacity: 0;
   height: 0;
   transition: all 0.5s;
 }
 
 .show-more_section--open {
-  display: block;
+  display: flex;
+  justify-content: center;
   opacity: 1;
   height: auto;
   padding: 0;
-}
-
-.tab {
-}
-
-.tab .tab-header {
-  display: flex;
-  justify-content: center;
-}
-
-.tab-item {
-  width: calc(100% / 4);
-  text-align: center;
-  padding: 0.5rem 1rem;
-  color: var(--text-color);
-  font-size: 0.6rem;
-  cursor: pointer;
 }
 
 #projects {

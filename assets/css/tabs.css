@@ -1,0 +1,63 @@
+.tabs {
+  width: 85vw;
+  height: 40vh;
+  position: relative;
+}
+
+.tabs .tab-header {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs .tab-header > div {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--gray-text-color);
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.tabs .tab-header > div.active {
+  color: #387be2;
+}
+
+.tabs .tab-body {
+  position: relative;
+  height: calc(100% - 50px);
+  overflow: hidden;
+}
+
+.tabs .tab-body > div {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  top: -100%;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+}
+
+.tabs .tab-body > div.active {
+  transform: translateY(0px);
+  top: 30px;
+  opacity: 1;
+}
+
+.tabs .tab-body img {
+  width: 50vw;
+}
+
+.tabs .tab-body .text-group sup {
+  color: var(--gray-text-color);
+  font-size: 0.6rem;
+  font-family: monospace;
+}
