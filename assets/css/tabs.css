@@ -61,3 +61,30 @@
   font-size: 0.6rem;
   font-family: monospace;
 }
+
+.tabs .tab-body .gallery {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 85vw;
+  height: 100vh;
+  background-image: url("../images/best-captures.webp");
+  background-size: 85vw;
+  background-repeat: no-repeat;
+}
+
+.tabs .tab-body .gallery a {
+  margin-top: 1rem;
+  position: absolute;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.8rem;
+  background-color: var(--bg-color);
+  text-decoration: none;
+  font-family: "Teko";
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
